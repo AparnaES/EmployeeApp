@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('./assets/imgbg1.jpg');
+    background-size: cover;
+}
+header{
+    color: navy;
+    height: 50px;
+    background-color: rgb(22, 128, 146);
+
+}
+footer{
+    color: navy;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(22, 128, 146);
+
+}

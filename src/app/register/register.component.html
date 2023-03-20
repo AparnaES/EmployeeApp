@@ -1,0 +1,45 @@
+<p>register works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h1 class="text-center">New Employee Sign Up</h1>
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 text-center p-5" id="formrow">
+                    <form action="" [formGroup]="registerForm">
+                        <input formControlName="Ename" type="text" id="i1" name="ip1" placeholder="Enter Employee Name"
+                            class="form-control mt-2">
+                        <div *ngIf="this.registerForm.get('Ename')?.errors && this.registerForm.get('Ename')?.touched">
+                            <p>Include Alphabets only</p>
+                        </div>
+                        <input formControlName="Eid" type="text" id="i2" name="ip2" placeholder="Enter Employee Id"
+                            class="form-control mt-2">
+                        <div *ngIf="this.registerForm.get('Eid')?.errors && this.registerForm.get('Eid')?.touched">
+                            <p>Include numbers only</p>
+                        </div>
+                        <input formControlName="Edesig" type="text" id="i3" name="ip3"
+                            placeholder="Enter Employee Designation" class="form-control mt-2">
+                        <div
+                            *ngIf="this.registerForm.get('Edesig')?.errors && this.registerForm.get('Edesig')?.touched">
+                            <p>Include Alphabets only</p>
+                        </div>
+                        <input formControlName="Esal" type="text" id="i4" name="ip4" placeholder="Enter Employee Salary"
+                            class="form-control mt-2">
+                        <div *ngIf="this.registerForm.get('Esal')?.errors && this.registerForm.get('Esal')?.touched">
+                            <p>Include numbers only</p>
+                        </div>
+                        <input formControlName="Eexp" type="text" id="i5" name="ip5"
+                            placeholder="Enter Employee Experience" class="form-control mt-2">
+                        <div *ngIf="this.registerForm.get('Eexp')?.errors && this.registerForm.get('Eexp')?.touched">
+                            <p>Include numbers only</p>
+                        </div>
+                        <button class="btn mt-2" (click)="addEmployee()">Sign Up</button>
+                    </form>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<!-- <p>dashboard works!</p> -->
+<div class="text-center">
+    <h5>{{cdate | date:"medium"}}</h5>
+</div>
+<div class="container p-5">
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <h1 class="text-center">Search Employee</h1>
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 text-center p-5" id="formrow">
+                    <form action="" [formGroup]="searchForm">
+                        <input formControlName="Eid" type="text" id="empid" name="employeeid" class="form-control"
+                            placeholder="Enter the Employee Id">
+                        <div *ngIf="this.searchForm.get('Eid')?.errors && this.searchForm.get('Eid')?.touched">
+                            <p>Include numbers only</p>
+                        </div>
+                        <button class="btn  mt-3"  (click)="searchEmployee()">Search</button>
+                    </form>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <h3></h3>
+
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</div>

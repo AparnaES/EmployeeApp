@@ -1,0 +1,22 @@
+h1{
+    color: navy;
+}
+button{
+    background-color: navy;
+    color: white;
+    border: none;
+    outline: none;
+}
+input::placeholder{
+color: navy;
+}
+input{
+    background: transparent;
+    border: 2px solid rgb(22, 128, 146);
+}
+#formrow{
+    height: 200px;
+    /* background-color: rgb(73, 76, 78); */
+    border: 3px solid navy;
+    border-radius: 50px;
+}
